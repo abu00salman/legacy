@@ -808,6 +808,50 @@ html[dir='rtl'] .hero,.picker-foot{text-align:center}
 /* Preserve independent phone proportions in the landing page */
 .d-3g.mini{--r:75px}.d-five.mini{--r:45px}
 </style>
+
+<style id="iphone-3gs-reference-correction">
+/* 3GS based on the supplied front/back reference photos. */
+.device.d-3g{--r:62px!important}
+.device.d-3g>.body{
+ border-radius:62px!important;
+ background:linear-gradient(90deg,#141517 0%,#f1f2f2 1%,#777b80 2%,#111215 3.3%,#070809 8%,#08090b 92%,#5d6064 97%,#e4e5e5 98.5%,#191a1b 100%)!important;
+ box-shadow:0 28px 55px #000a,0 0 0 1px #555!important;
+}
+.device.d-3g>.bezel{
+ inset:7px!important;border-radius:55px!important;
+ border:1px solid #1b1d20!important;
+ background:linear-gradient(135deg,#31353a 0%,#111315 20%,#070809 46%,#0a0b0d 78%,#24272a 100%)!important;
+ box-shadow:0 0 0 2px #d2d4d4,0 0 0 4px #292b2d,inset 0 2px 10px #5556!important;
+}
+.device.d-3g.f-white>.body{
+ background:linear-gradient(90deg,#777 0%,#f5f6f6 2%,#bbb 3%,#fafafa 5%,#fff 50%,#fafafa 95%,#aaa 98%,#666 100%)!important;
+}
+.device.d-3g.f-white>.bezel{
+ background:linear-gradient(135deg,#fff,#f7f7f7 55%,#e9e9e9)!important;
+ border-color:#f7f7f7!important;
+}
+.device.d-3g .cam,.device.d-3g .sensor{display:none!important}
+.device.d-3g .speaker{
+ top:73px!important;width:64px!important;height:10px!important;margin-left:-32px!important;
+ border-radius:8px!important;background:linear-gradient(#030303,#26292c 50%,#080808)!important;
+ box-shadow:inset 0 1px 2px #000,0 1px 1px #7778!important;
+}
+.device.d-3g .homebtn{
+ width:70px!important;height:70px!important;margin-left:-35px!important;bottom:28px!important;
+ background:radial-gradient(circle at 50% 36%,#25272b 0%,#111214 62%,#040405 100%)!important;
+ box-shadow:inset 0 2px 4px #000,0 1px 1px #6668,0 0 0 1px #000!important;
+}
+.device.d-3g .homebtn i{inset:24px!important;border-radius:5px!important;box-shadow:inset 0 0 0 2px #c5c6c7a6!important}
+.device.d-3g.f-white .homebtn{
+ background:radial-gradient(circle at 50% 30%,#fff,#e8e8e8 74%,#d1d1d1)!important;
+ box-shadow:inset 0 2px 3px #aaa8,0 0 0 1px #ddd!important;
+}
+.device.d-3g.f-white .homebtn i{box-shadow:inset 0 0 0 2px #b5b7b9!important}
+.device.d-3g .btn-volup{top:172px!important;height:30px!important}
+.device.d-3g .btn-voldn{top:216px!important;height:30px!important}
+.device.d-3g .btn-mute{top:120px!important;height:26px!important}
+.device.d-3g>.glare{background:linear-gradient(112deg,#ffffff12,transparent 32%)!important}
+</style>
 </head>
 <body>
 <div id="stage">
