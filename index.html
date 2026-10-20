@@ -781,6 +781,33 @@ html[dir='rtl'] .hero,.picker-foot{text-align:center}
 .ios6-badge{display:inline-flex;align-items:center;gap:6px;padding:3px 8px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);font-size:11px;color:#bfc8d6;margin-top:8px}
 </style>
 
+
+<style id="device-fidelity-fixes">
+/* 3GS: noticeably rounded plastic silhouette, narrow chrome rim, centered earpiece */
+.d-3g{--r:75px}
+.d-3g>.body{border-radius:75px;background:linear-gradient(90deg,#050506 0%,#34363b 2%,#0b0b0d 6%,#050506 50%,#0b0b0d 94%,#34363b 98%,#050506 100%)!important}
+.d-3g>.bezel{inset:5px!important;border-radius:70px!important;border:3px solid #0d0e10;box-shadow:0 0 0 2px #d3d7d9,0 0 0 4px #55585c,inset 0 0 18px rgba(255,255,255,.08)!important}
+.d-3g.f-white>.body{background:linear-gradient(90deg,#999 0%,#f8f8f8 3%,#fff 12%,#fff 88%,#f4f4f4 97%,#aaa 100%)!important}
+.d-3g.f-white>.bezel{background:linear-gradient(135deg,#fff,#eee)!important;border-color:#f8f8f8}
+.d-3g .cam,.d-3g .sensor{display:none!important}
+.d-3g .speaker{top:66px!important;width:65px!important;height:10px!important;border-radius:9px!important}
+.d-3g .homebtn{bottom:29px!important}
+/* 4: shorter, broad upper/lower bezels, camera to the side */
+.d-four{--r:47px}
+.d-four>.bezel{border-radius:41px!important}
+.d-four .cam{top:64px!important;margin-left:-65px!important}
+/* 5: tall, slim chassis, camera above receiver (not beside it) */
+.d-five{--r:45px}
+.d-five>.body{border-radius:45px!important}
+.d-five>.bezel{inset:5px!important;border-radius:40px!important}
+.d-five .speaker{top:68px!important;width:62px!important}
+.d-five .cam{top:39px!important;margin-left:0!important}
+.d-five .homebtn{bottom:22px!important}
+.d-five .screen{top:118px!important}
+.d-five.f-white .bezel{background:linear-gradient(160deg,#fff,#f6f6f6 55%,#e9e9e9)!important}
+/* Preserve independent phone proportions in the landing page */
+.d-3g.mini{--r:75px}.d-five.mini{--r:45px}
+</style>
 </head>
 <body>
 <div id="stage">
